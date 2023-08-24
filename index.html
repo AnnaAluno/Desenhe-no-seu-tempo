@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Desenhe no seu tempo</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#a7aad2" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+  </head>
+  <body>
+    
+    <div id="loadingDiv">
+      <div class="loader"></div>
+    </div>
+    <h1 style="color: aliceblue;">Timer da Anninha</h1>
+
+    <div class="time">
+      <span id="seconds">00</span>
+      <span class="dots">:</span>
+      <span id="tens">00</span>
+    </div>
+    <div class="btns">
+      <button type="button" class="btn btn-start">Start</button>
+      <button type="button" class="btn btn-stop">Stop</button>
+      <button type="button" class="btn btn-reset">Reset</button>
+    </div>
+
+    <div class="">
+      <h1 style="color:aliceblue;">Desenha no seu tempo</h1>
+      <div id="canvasDiv">
+        <canvas id="myCanvas" width="1500" height="800" style="border:2px solid #aaaaaa; "></canvas>
+        <div id="panel">
+          <div style="padding-left:5px; margin-bottom:5px; color: aliceblue;">cor</div>
+          <div class="colorPanel" style="background:black;"></div>
+          <div class="colorPanel" style="background:red;"></div>
+          <div class="colorPanel" style="background:green;"></div>
+          <div class="colorPanel" style="background:blue;"></div>
+          <div class="colorPanel" style="background:yellow;"></div>
+          <div class="colorPanel" style="background:purple;"></div>
+          <div class="colorPanel" style="background:orange;"></div>
+          <div class="colorPanel" style="background:pink;"></div>
+          <div style="padding-left:5px; margin-bottom:5px; color: aliceblue;">grossura</div>
+          <div class="linewidth" style="color:aliceblue">1</div>
+          <div class="linewidth">5</div>
+          <div class="linewidth">10</div>
+          <div class="linewidth">20</div>
+          <button id="limpar" type="button">Limpar</button>
+        </div>
+      </div>
+    </div>
+
+    <audio loop preload="auto" id="sound">
+      <source src="sound/tick-tock.mp3" />
+      <code>audio</code>
+    </audio>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
